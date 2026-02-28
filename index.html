@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rincón Creativo AM - Manualidades y productos personalizados en Mérida, Yucatán. Vasos, termos, fofuchas, libretas, letras LED y más. ¡Cotiza el tuyo!">
+    <meta name="keywords" content="vasos personalizados, fofuchas, libretas personalizadas, letras LED, termos personalizados, lapiceras, cake toppers, Mérida, Yucatán, regalos personalizados, manualidades">
+    <meta property="og:title" content="Rincón Creativo AM - Creaciones Personalizadas en Mérida">
+    <meta property="og:description" content="Vasos, termos, fofuchas, libretas, letras LED y más. Todo personalizado y hecho con amor. ¡Cotiza el tuyo!">
+    <meta property="og:image" content="logo_rcam.jpg">
+    <meta property="og:type" content="website">
+    <title>Rincón Creativo AM | Creaciones Personalizadas en Mérida, Yucatán</title>
+    <link rel="icon" type="image/jpeg" href="logo_rcam.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#inicio" class="header__logo">
+                <img src="logo_rcam.jpg" alt="Rincón Creativo AM" class="header__logo-img">
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li><a href="#catalogo" class="nav__link">Catálogo</a></li>
+                    <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero__bg"></div>
+        <div class="container hero__content">
+            <img src="logo_rcam.jpg" alt="Rincón Creativo AM" class="hero__logo">
+            <h1 class="hero__title">Creaciones únicas hechas con <span class="hero__highlight">amor</span></h1>
+            <p class="hero__subtitle">Vasos, termos, fofuchas, libretas, letras LED y mucho más. Todo personalizado a tu gusto para cualquier ocasión.</p>
+            <div class="hero__tags">
+                <span class="hero__tag">Vasos Personalizados</span>
+                <span class="hero__tag">Fofuchas</span>
+                <span class="hero__tag">Letras LED</span>
+                <span class="hero__tag">Libretas</span>
+                <span class="hero__tag">Cake Toppers</span>
+                <span class="hero__tag">Y más...</span>
+            </div>
+            <div class="hero__buttons">
+                <a href="#catalogo" class="btn btn--primary">Ver Catálogo</a>
+                <a href="https://wa.me/5219992418798?text=Hola%2C%20me%20interesa%20cotizar%20un%20producto%20personalizado" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Cotiza por WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#catalogo" aria-label="Scroll hacia abajo">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section class="catalogo" id="catalogo">
+        <div class="container">
+            <h2 class="section__title">Nuestro Catálogo</h2>
+            <p class="section__subtitle">Cada pieza es elaborada a mano con dedicación y cariño. ¡Personalízalo a tu gusto!</p>
+
+            <!-- Filtros -->
+            <div class="catalogo__filtros">
+                <button class="filtro-btn filtro-btn--active" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="vasos">Vasos y Termos</button>
+                <button class="filtro-btn" data-filter="fofuchas">Fofuchas</button>
+                <button class="filtro-btn" data-filter="libretas">Libretas y Lapiceras</button>
+                <button class="filtro-btn" data-filter="letras">Letras LED</button>
+                <button class="filtro-btn" data-filter="extras">Cake Toppers y Más</button>
+            </div>
+
+            <!-- Grid de productos -->
+            <div class="catalogo__grid">
+
+                <!-- === VASOS Y TERMOS === -->
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/vasos_oersinalizados.jpg" alt="Vaso personalizado infantil con nombre Isabella" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Personalizable</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Vasos Infantiles Personalizados</h3>
+                        <p class="producto-card__desc">Vasos con tapa ideales para los peques. Personalizados con el nombre y diseño que elijas: flores, personajes, animales y más.</p>
+                        <p class="producto-card__uso">Fiestas infantiles, uso diario, regalo para niños, lunch escolar.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20un%20vaso%20infantil%20personalizado" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/vasopersonalizado.jpg" alt="Vaso personalizado con caricatura y nombre" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Personalizable</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Vasos con Diseño Exclusivo</h3>
+                        <p class="producto-card__desc">Vasos transparentes con tapa pop-up, decorados con vinil holográfico de alta calidad. Cualquier temática: caricaturas, nombres, frases y más.</p>
+                        <p class="producto-card__uso">Uso escolar, regalo personalizado, recuerdo de fiesta.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20un%20vaso%20con%20diseño%20exclusivo" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/vasos_persn.jpg" alt="Vaso personalizado azul con nombre Valentino" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Personalizable</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Vasos para Niños y Niñas</h3>
+                        <p class="producto-card__desc">Disponibles en todos los colores. Decorados con figuras temáticas y el nombre de tu peque. Material resistente y duradero.</p>
+                        <p class="producto-card__uso">Lunch escolar, fiesta temática, regalo de cumpleaños.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20vasos%20personalizados%20para%20niños" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/termo_personalizado.jpg" alt="Termo estilo Stanley personalizado con diseño Minnie Mouse" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Personalizable</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Termos Personalizados</h3>
+                        <p class="producto-card__desc">Termos tipo Stanley con diseños únicos. Personajes, nombres, colores a elegir. Mantienen tu bebida fría o caliente con estilo.</p>
+                        <p class="producto-card__uso">Uso diario, oficina, gym, regalo especial, día de las madres.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20un%20termo%20personalizado" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/vasos_bodacivil.jpg" alt="Vasos personalizados para boda civil" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Bodas</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Vasos para Bodas y Eventos</h3>
+                        <p class="producto-card__desc">Recuerdos únicos para tu boda civil o religiosa. Vasos elegantes con fecha, nombres de los novios y diseño personalizado. ¡Llenos de dulces!</p>
+                        <p class="producto-card__uso">Bodas, despedidas de soltera, aniversarios, XV años.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20vasos%20personalizados%20para%20mi%20boda" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/vasos_boda.jpg" alt="Mesa de recuerdos de boda con vasos personalizados" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Bodas</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Recuerdos Completos para Bodas</h3>
+                        <p class="producto-card__desc">Paquetes completos de recuerdos: vasos coloridos con dulces, decoración de mesa y fofucha de novia incluida. ¡Todo coordinado para tu gran día!</p>
+                        <p class="producto-card__uso">Mesas de recuerdos, centros de mesa, decoración de eventos.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20recuerdos%20completos%20para%20mi%20boda" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/mas_Vasos.jpg" alt="Vaso personalizado para primer cumpleaños temática granja" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Fiestas</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Vasos para Fiestas Temáticas</h3>
+                        <p class="producto-card__desc">Vasos decorados con la temática de tu fiesta: granja, princesas, superhéroes, lo que imagines. Con etiqueta personalizada, tapa y popote.</p>
+                        <p class="producto-card__uso">Fiestas de cumpleaños, baby showers, bautizos, primeras comuniones.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20vasos%20para%20una%20fiesta%20temática" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="vasos">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/vasos_libros.jpg" alt="Kit de fiesta: vasos, libretas para colorear y crayones personalizados" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Kit Completo</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Kits de Fiesta Personalizados</h3>
+                        <p class="producto-card__desc">Paquetes completos con vaso, libreta para colorear y crayones. Todo coordinado con la temática de tu evento. ¡El recuerdo perfecto!</p>
+                        <p class="producto-card__uso">Fiestas infantiles, mesas de dulces, recuerdos para invitados.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20un%20kit%20de%20fiesta%20personalizado" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- === FOFUCHAS === -->
+                <div class="producto-card" data-category="fofuchas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/fofucha_2.jpg" alt="Fofucha personalizada de maestra con camiseta Crayola" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Hecho a mano</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Fofuchas Personalizadas</h3>
+                        <p class="producto-card__desc">Muñecas únicas hechas en foami con increíble detalle. Se personalizan con el look, ropa y accesorios de la persona. ¡Un regalo que enamora!</p>
+                        <p class="producto-card__uso">Regalo para maestras, día del maestro, cumpleaños, recuerdo especial.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20una%20fofucha%20personalizada" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="fofuchas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/fofucha_toystory.jpg" alt="Fofucha de maestra en caja estilo Crayola" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Edición Especial</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Fofuchas en Caja de Presentación</h3>
+                        <p class="producto-card__desc">Fofuchas con empaque premium estilo Crayola. La caja personalizada hace que sea un regalo listo para entregar. ¡Impresiona desde el primer momento!</p>
+                        <p class="producto-card__uso">Regalo de fin de curso, día del maestro, detalle especial con presentación.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20una%20fofucha%20con%20caja%20de%20presentación" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="fofuchas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/fofucha1.jpg" alt="Fofucha de Sally de El Extraño Mundo de Jack" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Personajes</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Fofuchas de Personajes</h3>
+                        <p class="producto-card__desc">Recreamos cualquier personaje en fofucha: Disney, películas, anime, lo que imagines. Cada detalle hecho con precisión y amor artesanal.</p>
+                        <p class="producto-card__uso">Coleccionismo, regalo para fans, decoración temática, Halloween.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20una%20fofucha%20de%20personaje" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="fofuchas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/fofucha.jpg" alt="Fofucha personalizada de maestra con uniforme" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Hecho a mano</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Fofuchas con Uniforme</h3>
+                        <p class="producto-card__desc">Replicamos el uniforme o ropa de la persona con todo detalle: logotipos, colores, accesorios. ¡Se parecerá a quien tú quieras!</p>
+                        <p class="producto-card__uso">Regalo corporativo, maestras, enfermeras, doctores, profesiones.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20una%20fofucha%20con%20uniforme%20personalizado" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="fofuchas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/regalo_alumnos.jpg" alt="Bolsas de regalo de graduación con fofucha y accesorios" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Graduación</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Regalos de Graduación</h3>
+                        <p class="producto-card__desc">Bolsas de regalo personalizadas con mini fofucha de graduación, accesorios y mensajes motivacionales. ¡Cada alumno se lleva un recuerdo único!</p>
+                        <p class="producto-card__uso">Graduaciones de kinder, primaria, fin de curso, regalos para alumnos.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20regalos%20de%20graduación%20personalizados" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- === LIBRETAS Y LAPICERAS === -->
+                <div class="producto-card" data-category="libretas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/libretas_personalizadas.jpg" alt="Libreta personalizada con diseño de Frozen para escuela" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Escolar</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Libretas Personalizadas</h3>
+                        <p class="producto-card__desc">Libretas escolares con portadas personalizadas: nombre del alumno, materia, colegio y el personaje o diseño que prefiera. Acabado holográfico brillante.</p>
+                        <p class="producto-card__uso">Regreso a clases, regalo escolar, organización de materias, detalle para alumnos.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20libretas%20personalizadas" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="libretas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/libretas_personalizadas2.jpg" alt="Libreta personalizada de Cenicienta para materia de inglés" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Escolar</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Libretas por Materia</h3>
+                        <p class="producto-card__desc">Cada materia con su propia portada temática. Princesas, superhéroes, animales o cualquier diseño. Tu hijo las va a querer todas.</p>
+                        <p class="producto-card__uso">Colección escolar completa, paquetes por grado, regalo de regreso a clases.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20un%20paquete%20de%20libretas%20por%20materia" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="libretas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/libretas_personalizada3.jpg" alt="Libreta personalizada de Rapunzel" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Escolar</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Libretas con Acabado Premium</h3>
+                        <p class="producto-card__desc">Portadas con acabado holográfico que brilla con la luz. Diseños de alta calidad impresos a color. ¡Se ven espectaculares!</p>
+                        <p class="producto-card__uso">Regalo especial, presentación de trabajos, diario personal.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20libretas%20con%20acabado%20premium" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="libretas">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/lapiceras_personalizadas.jpg" alt="Lapiceras personalizadas con personajes de Paw Patrol, Minnie, Sonic" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Escolar</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Lapiceras Personalizadas</h3>
+                        <p class="producto-card__desc">Lapiceras con cierre y ventana transparente, decoradas con los personajes favoritos de tu hijo: Paw Patrol, Minnie, Sonic, Stitch y más.</p>
+                        <p class="producto-card__uso">Regreso a clases, regalo escolar, paquetes de útiles, fiestas infantiles.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20lapiceras%20personalizadas" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- === LETRAS LED === -->
+                <div class="producto-card" data-category="letras">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/636588671_122178349772784676_6257637211929494450_n.jpg" alt="Letras LED iluminadas en la playa al atardecer para boda" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Eventos</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Letras con Luces LED</h3>
+                        <p class="producto-card__desc">Letras gigantes iluminadas con focos LED para bodas, cumpleaños y eventos. Pintadas a mano con la temática que prefieras. ¡Impacto visual garantizado!</p>
+                        <p class="producto-card__uso">Bodas en playa, fiestas de XV años, sesiones fotográficas, decoración de eventos.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20letras%20con%20luces%20LED" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="letras">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/letras_luces_en_playa.jpg" alt="Letras LED turquesa en playa al atardecer" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Bodas</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Letras LED para Bodas en Playa</h3>
+                        <p class="producto-card__desc">Iniciales de los novios con temática playera: pintadas en turquesa con decoración de conchas y estrellas de mar. Un fondo espectacular para tus fotos.</p>
+                        <p class="producto-card__uso">Bodas destino, pedidas de mano, renovación de votos, fiestas en playa.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20letras%20LED%20para%20boda%20en%20playa" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="letras">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/letras_luces_led_a.jpg" alt="Letra A iluminada con LEDs encendidos de noche" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Hecho a mano</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Letras LED Individuales</h3>
+                        <p class="producto-card__desc">Letras sueltas o iniciales con focos LED brillantes. Perfectas para decorar habitaciones, salas de fiesta o como accesorio fotográfico.</p>
+                        <p class="producto-card__uso">Decoración de cuarto, mesa de regalos, photobooth, baby shower.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20una%20letra%20LED%20individual" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- === CAKE TOPPERS Y EXTRAS === -->
+                <div class="producto-card" data-category="extras">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/547672474_122156043242784676_6852062447231125503_n.jpg" alt="Cake toppers personalizados - cohete, unicornio, arcoíris" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Fiestas</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Cake Toppers Personalizados</h3>
+                        <p class="producto-card__desc">Haz brillar tu pastel con toppers únicos: nombres, números, personajes, unicornios, cohetes y más. Impresos a color con diseño profesional.</p>
+                        <p class="producto-card__uso">Cumpleaños, baby showers, bautizos, fiestas temáticas, primera comunión.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20un%20cake%20topper%20personalizado" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="extras">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/gelatina_perrito_cumpleano.jpg" alt="Cake topper de mascota personalizado sobre gelatina" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Mascotas</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Toppers para Cumpleaños de Mascotas</h3>
+                        <p class="producto-card__desc">¡Porque ellos también merecen festejar! Toppers personalizados con la carita de tu mascota, su nombre y la temática que prefieras.</p>
+                        <p class="producto-card__uso">Cumpleaños de mascotas, fiestas temáticas, sesiones fotográficas.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20un%20topper%20para%20cumpleaños%20de%20mascota" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="extras">
+                    <div class="producto-card__img-wrapper">
+                        <img src="img/gelatinas_perrito_fiesta.jpg" alt="Gelatinas individuales personalizadas con toppers" class="producto-card__img" loading="lazy">
+                        <div class="producto-card__badge">Fiestas</div>
+                    </div>
+                    <div class="producto-card__body">
+                        <h3 class="producto-card__title">Decoración para Postres</h3>
+                        <p class="producto-card__desc">Toppers individuales para gelatinas, cupcakes y postres de tu fiesta. Todos coordinados con la temática de tu evento. ¡El detalle que marca la diferencia!</p>
+                        <p class="producto-card__uso">Mesas de postres, fiestas infantiles, baby showers, cumpleaños de mascotas.</p>
+                        <a href="https://wa.me/5219992418798?text=Hola%2C%20quiero%20cotizar%20decoración%20para%20postres%20de%20fiesta" class="btn btn--cta" target="_blank" rel="noopener">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            ¡Cotiza el tuyo ya!
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2 class="section__title">Contáctanos</h2>
+            <p class="section__subtitle">¡Estamos para ayudarte a hacer realidad tus ideas!</p>
+            <div class="contacto__grid">
+                <div class="contacto__info">
+                    <a href="https://wa.me/5219992418798?text=Hola%2C%20me%20interesa%20cotizar%20un%20producto%20personalizado" class="contacto__card contacto__card--whatsapp" target="_blank" rel="noopener">
+                        <svg class="contacto__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>999 241 8798</span>
+                        </div>
+                    </a>
+                    <a href="tel:+529992418798" class="contacto__card">
+                        <svg class="contacto__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <span>999 241 8798</span>
+                        </div>
+                    </a>
+                    <a href="mailto:rinconcreativoam@gmail.com" class="contacto__card">
+                        <svg class="contacto__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                        <div>
+                            <strong>Correo Electrónico</strong>
+                            <span>rinconcreativoam@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/rinconcreativoam" class="contacto__card" target="_blank" rel="noopener">
+                        <svg class="contacto__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        <div>
+                            <strong>Facebook</strong>
+                            <span>Rincón Creativo AM</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/rinconcreativo.am/" class="contacto__card" target="_blank" rel="noopener">
+                        <svg class="contacto__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100-2.881 1.44 1.44 0 000 2.881z"/></svg>
+                        <div>
+                            <strong>Instagram</strong>
+                            <span>@rinconcreativo.am</span>
+                        </div>
+                    </a>
+                    <a href="https://maps.app.goo.gl/yjMtgK4JaTkGGk797" class="contacto__card" target="_blank" rel="noopener">
+                        <svg class="contacto__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <span>Mérida, Yucatán</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div class="contacto__form-wrapper">
+                    <h3 class="contacto__form-title">Envíanos un mensaje</h3>
+                    <form id="contact-form" class="contacto__form">
+                        <div class="form-group">
+                            <label for="from_name">Nombre *</label>
+                            <input type="text" id="from_name" name="from_name" required placeholder="Tu nombre completo" autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="reply_to">Correo electrónico *</label>
+                            <input type="email" id="reply_to" name="reply_to" required placeholder="tu@correo.com" autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="¿Sobre qué producto te interesa?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos los detalles de lo que necesitas..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--submit" id="submit-btn">
+                            <span class="btn__text">Enviar Mensaje</span>
+                            <span class="btn__loading" style="display:none;">Enviando...</span>
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="logo_rcam.jpg" alt="Rincón Creativo AM" class="footer__logo">
+                <p>Creaciones únicas hechas con amor en Mérida, Yucatán.</p>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/rinconcreativoam" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/rinconcreativo.am/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100-2.881 1.44 1.44 0 000 2.881z"/></svg>
+                </a>
+                <a href="https://wa.me/5219992418798" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+                <a href="mailto:rinconcreativoam@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                </a>
+            </div>
+            <p class="footer__copy">&copy; 2026 Rincón Creativo AM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/5219992418798?text=Hola%2C%20me%20interesa%20cotizar%20un%20producto%20personalizado" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" aria-label="Cerrar">&times;</button>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__img">
+            <p class="lightbox__caption"></p>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
