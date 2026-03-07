@@ -1,0 +1,584 @@
+/* ================================================
+   Rincón Creativo AM - Estilos Personalizados
+   Cargado DESPUÉS de style.css para sobreescribir
+   ================================================ */
+
+/* --- Tipografía global --- */
+body, p, li, input, textarea, button, label,
+.nav-link, .navbar-nav, .heading_content,
+.description, .about_post, .comment {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section_heading h1, .section_heading h2,
+.title, .nav-brand {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* --- Logo en header --- */
+.rcam-logo-nav {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(42,171,179,0.2);
+}
+
+/* Ajusta el padding del navbar para que el logo circular encaje bien */
+.navbar-brand {
+  padding: 2px 0;
+}
+
+/* --- Hero Section --- */
+#rcam-hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #E8F6F7 0%, #fff5f6 50%, #FDE8EB 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 110px 0 70px;
+  text-align: center;
+}
+
+.rcam-hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../Ex-proyecto/img/vasos_boda.jpg') center/cover no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.rcam-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.rcam-hero-logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(42, 171, 179, 0.3);
+  border: 5px solid #fff;
+  margin-bottom: 28px;
+  animation: rcamFadeDown 0.7s ease both;
+}
+
+.rcam-hero-title {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  animation: rcamFadeUp 0.8s ease 0.1s both;
+}
+
+.rcam-hero-title span {
+  color: #2AABB3;
+  font-family: 'Pacifico', cursive !important;
+  font-weight: 400 !important;
+}
+
+.rcam-hero-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  animation: rcamFadeUp 0.8s ease 0.2s both;
+}
+
+.rcam-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 38px;
+  animation: rcamFadeUp 0.8s ease 0.3s both;
+}
+
+.rcam-tag {
+  background: #fff;
+  color: #2AABB3;
+  border: 1.5px solid #2AABB3;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  transition: all 0.2s;
+}
+
+.rcam-tag:hover {
+  background: #2AABB3;
+  color: #fff;
+}
+
+.rcam-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  animation: rcamFadeUp 0.8s ease 0.4s both;
+}
+
+.rcam-hero-scroll {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+.rcam-hero-scroll a {
+  color: #2AABB3;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* --- Animaciones Hero --- */
+@keyframes rcamFadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rcamFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+/* --- Botones RCAM --- */
+.rcam-btn-primary,
+a.rcam-btn-primary.defualt-button.view_more {
+  background: #2AABB3 !important;
+  border-color: #2AABB3 !important;
+  color: #fff !important;
+}
+
+.rcam-btn-primary:hover,
+a.rcam-btn-primary.defualt-button.view_more:hover {
+  background: #228E95 !important;
+  border-color: #228E95 !important;
+  color: #fff !important;
+}
+
+.rcam-btn-whatsapp,
+a.rcam-btn-whatsapp.defualt-button.view_more {
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  color: #fff !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rcam-btn-whatsapp:hover,
+a.rcam-btn-whatsapp.defualt-button.view_more:hover {
+  background: #1ebe5d !important;
+  border-color: #1ebe5d !important;
+  color: #fff !important;
+}
+
+/* --- CTA debajo del catálogo --- */
+.rcam-catalog-cta {
+  margin-top: 45px;
+  padding-bottom: 10px;
+}
+
+/* --- Portfolio: quitar enlace de detalle (no se usa) --- */
+.project .label-text a.text-title,
+.project .label-text span.text-title {
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+/* --- Formulario de contacto: links en tarjetas --- */
+section#contact-us .contact-card .description a {
+  color: #2AABB3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section#contact-us .contact-card .description a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer: logo circular --- */
+.rcam-logo-footer {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.2);
+  margin-bottom: 15px;
+}
+
+/* --- Footer: links en info de contacto --- */
+footer .contact_info ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer .contact_info ul li a:hover {
+  color: #2AABB3;
+}
+
+/* --- Footer: ocultar newsletter (no se usa) --- */
+.newsletter {
+  display: none !important;
+}
+
+/* --- Mapa --- */
+#map iframe {
+  width: 100%;
+  height: 420px;
+  display: block;
+}
+
+/* --- Botón flotante de WhatsApp --- */
+.rcam-whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 62px;
+  height: 62px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.rcam-whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.7);
+}
+
+.rcam-whatsapp-float svg {
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+
+/* --- Feedback del formulario --- */
+#rcam-form-feedback {
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+
+#rcam-form-feedback a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* --- Separadores en teal --- */
+.separator ul li,
+.separator.left-align ul li {
+  background: #2AABB3;
+}
+
+/* --- Botón WhatsApp en cada card del catálogo --- */
+.rcam-card-cta {
+  padding: 10px 14px 14px;
+  text-align: center;
+  background: #fff;
+}
+
+.rcam-card-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #25D366;
+  color: #fff !important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 8px 18px;
+  border-radius: 24px;
+  text-decoration: none !important;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 3px 12px rgba(37,211,102,0.35);
+  white-space: nowrap;
+}
+
+.rcam-card-wa-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37,211,102,0.5);
+  color: #fff !important;
+}
+
+.rcam-card-wa-btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: #fff;
+}
+
+/* Ajuste para que el card del portfolio incluya el botón */
+.port-item .project.portfolio-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================================================
+   ANIMACIONES DE SCROLL — Intersection Observer
+   ================================================ */
+
+/* Estado inicial: invisible, listo para animar */
+.rcam-animate-section,
+.rcam-animate-child {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* fadeInUp */
+.rcam-anim-fadeInUp   { transform: translateY(40px); }
+/* fadeInDown */
+.rcam-anim-fadeInDown { transform: translateY(-30px); }
+/* fadeInLeft */
+.rcam-anim-fadeInLeft { transform: translateX(-40px); }
+/* fadeInRight */
+.rcam-anim-fadeInRight{ transform: translateX(40px); }
+/* zoomIn */
+.rcam-anim-zoomIn     { transform: scale(0.88); }
+
+/* Estado visible: se activa con JS al entrar en viewport */
+.rcam-animate-section.rcam-visible,
+.rcam-animate-child.rcam-visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Secciones: transición un poco más lenta */
+.rcam-animate-section {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* Elementos hijo: ligeramente más rápidos */
+.rcam-animate-child {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover en service-card más suave */
+.service-card.item {
+  transition: border 0.3s ease, background 0.3s ease,
+              box-shadow 0.3s ease, transform 0.25s ease;
+}
+.service-card.item:hover {
+  transform: translateY(-6px);
+}
+
+/* Hover en portfolio card */
+.project.portfolio-inner {
+  transition: box-shadow 0.3s ease, transform 0.25s ease;
+  overflow: hidden;
+}
+.project.portfolio-inner:hover {
+  box-shadow: 0 10px 32px rgba(42,171,179,0.2);
+}
+
+/* Hover suave en tarjetas de contacto */
+.contact-card {
+  transition: box-shadow 0.3s ease, transform 0.25s ease;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(42,171,179,0.15);
+}
+
+/* Testimonios: zoom suave en hover */
+.testimonials-slider .item {
+  transition: box-shadow 0.3s ease;
+}
+.testimonials-slider .item:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .rcam-hero-title    { font-size: 1.9rem; }
+  .rcam-hero-logo     { width: 120px; height: 120px; }
+  .rcam-hero-buttons  { flex-direction: column; align-items: center; }
+  .rcam-hero-subtitle { font-size: 1rem; }
+  #map iframe         { height: 300px; }
+}
+
+@media (max-width: 480px) {
+  .rcam-hero-title { font-size: 1.5rem; }
+  .rcam-hero-logo  { width: 100px; height: 100px; }
+  .rcam-tag        { font-size: 0.78rem; padding: 5px 13px; }
+}
+
+/* --- Tarjetas de Producto (Catálogo) --- */
+.rcam-product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(42,171,179,0.10);
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.rcam-product-card:hover {
+  box-shadow: 0 10px 32px rgba(42,171,179,0.22);
+  transform: translateY(-5px);
+}
+
+.rcam-product-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.rcam-product-img-wrap img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.rcam-product-card:hover .rcam-product-img-wrap img {
+  transform: scale(1.06);
+}
+
+.rcam-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #F08B96;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.rcam-product-body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rcam-product-title {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2AABB3;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.rcam-product-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.65;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.rcam-product-uses {
+  background: #E8F6F7;
+  color: #2AABB3;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 7px 12px;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.rcam-card-wa-btn-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff !important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 11px 0;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background 0.2s, transform 0.15s;
+  width: 100%;
+}
+
+.rcam-card-wa-btn-full:hover {
+  background: #1ebe5d;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.rcam-wa-icon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+
+/* --- Lightbox hover en imagen del card --- */
+.rcam-product-img-wrap a {
+  display: block;
+  position: relative;
+  cursor: zoom-in;
+}
+
+.rcam-product-img-wrap a::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(42,171,179,0);
+  transition: background 0.3s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.rcam-product-img-wrap a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.95) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232AABB3' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") center/26px no-repeat;
+  opacity: 0;
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.rcam-product-img-wrap a:hover::before {
+  background: rgba(42,171,179,0.25);
+}
+
+.rcam-product-img-wrap a:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
