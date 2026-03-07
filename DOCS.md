@@ -20,7 +20,7 @@ Negocio de manualidades y productos personalizados ubicado en Mérida, Yucatán,
 |---------|---------|
 | `index.html` | Página completa: Header, Hero, Catálogo, Contacto, Footer |
 | `css/styles.css` | Todos los estilos, responsive, animaciones |
-| `js/main.js` | Menú móvil, filtros catálogo, lightbox, scroll reveal, EmailJS |
+| `js/main.js` | Menú móvil, modal de categorías, lightbox, scroll reveal, EmailJS |
 | `logo_rcam.jpg` | Logo principal (colores teal + rosa, herramientas de manualidades) |
 
 ---
@@ -41,9 +41,12 @@ Negocio de manualidades y productos personalizados ubicado en Mérida, Yucatán,
 - Botones: "Ver Catálogo" + "Cotiza por WhatsApp"
 
 ### 3. Catálogo (sección principal)
-- **Filtros por categoría**: Todos, Vasos y Termos, Fofuchas, Libretas y Lapiceras, Letras LED, Cake Toppers y Más
-- **Grid responsivo**: 3 columnas (desktop), 2 (tablet), 1 (móvil)
-- **23 tarjetas de producto** con imagen, badge, descripción, usos y botón "¡Cotiza el tuyo ya!" a WhatsApp
+- **Grid de 5 categorías**: Vasos y Termos, Fofuchas, Libretas y Lapiceras, Letras LED, Cake Toppers y Más
+- Cada tarjeta de categoría muestra un **collage de imágenes** de sus productos (grid 2×2 para 4 imágenes, layout izq+derecha para 3), nombre, descripción breve y botón **"Ver proyectos y precios"**
+- Al hacer clic → se abre un **modal** con todas las tarjetas de productos de esa categoría
+- **Modal**: grid responsivo de tarjetas de producto con imagen, badge, título, descripción, usos y botón "¡Cotiza el tuyo ya!" → WhatsApp
+- Los datos de productos están en `#productos-data` (div oculto en HTML), los cards se clonan al modal dinámicamente
+- Al clonar se elimina `loading="lazy"` de las imágenes para forzar carga inmediata (evita imágenes rotas por `display:none`)
 
 ### 4. Contacto
 - Tarjetas: WhatsApp, Teléfono, Email, Facebook, Instagram, Ubicación
