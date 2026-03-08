@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Panel Administrativo | Rincón Creativo AM</title>
+  <link rel="shortcut icon" type="image/jpeg" href="/Ex-proyecto/logo_rcam.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ══════════════════════════════════════════════════
+       Reset & Base
+    ══════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #f4f7f9;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* ══════════════════════════════════════════════════
+       Header / Navbar
+    ══════════════════════════════════════════════════ */
+    .admin-header {
+      background: linear-gradient(135deg, #2AABB3, #228E95);
+      color: #fff;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(42,171,179,0.4);
+    }
+
+    .admin-header__brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .admin-header__logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    .admin-header__title {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .admin-header__title small {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    .admin-header__actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-logout {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.4);
+      border-radius: 8px;
+      padding: 7px 16px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-logout:hover { background: rgba(255,255,255,0.3); }
+
+    /* ══════════════════════════════════════════════════
+       Main content
+    ══════════════════════════════════════════════════ */
+    .admin-main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+
+    /* ── Toolbar ─────────────────────────────────────── */
+    .admin-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .admin-toolbar__heading h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    .admin-toolbar__heading span {
+      font-size: 0.85rem;
+      color: #888;
+      font-weight: 500;
+    }
+
+    .btn-new {
+      background: #2AABB3;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 11px 22px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 3px 14px rgba(42,171,179,0.35);
+    }
+
+    .btn-new:hover { background: #228E95; transform: translateY(-1px); }
+
+    /* ── Product grid ────────────────────────────────── */
+    #product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .rcam-admin-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .rcam-admin-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(42,171,179,0.15);
+    }
+
+    .rcam-admin-card__img {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #f0f0f0;
+    }
+
+    .rcam-admin-card__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .rcam-admin-card:hover .rcam-admin-card__img img { transform: scale(1.04); }
+
+    .rcam-admin-card__body {
+      padding: 14px 16px 8px;
+      flex: 1;
+    }
+
+    .rcam-admin-card__cat {
+      display: inline-block;
+      background: #E8F6F7;
+      color: #2AABB3;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+    }
+
+    .rcam-admin-card__title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .rcam-admin-card__desc {
+      font-size: 0.8rem;
+      color: #888;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .rcam-admin-card__actions {
+      display: flex;
+      gap: 8px;
+      padding: 10px 16px 14px;
+    }
+
+    .rcam-admin-btn {
+      flex: 1;
+      padding: 8px 0;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+
+    .rcam-admin-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    .rcam-admin-btn--edit   { background: #EAF7F8; color: #2AABB3; }
+    .rcam-admin-btn--delete { background: #FDE8EB; color: #c0392b; }
+
+    .rcam-admin-empty,
+    .rcam-admin-loading {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    /* ══════════════════════════════════════════════════
+       Modal
+    ══════════════════════════════════════════════════ */
+    .rcam-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 500;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .rcam-modal--open { display: flex; }
+
+    .rcam-modal__content {
+      background: #fff;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 520px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      animation: modalIn 0.25s ease;
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: scale(0.94) translateY(16px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .rcam-modal__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .rcam-modal__header h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    .btn-close-modal {
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: #aaa;
+      line-height: 1;
+      padding: 2px 6px;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .btn-close-modal:hover { color: #c0392b; background: #FDE8EB; }
+
+    .rcam-modal__body { padding: 20px 24px; }
+
+    /* ── Formulario ──────────────────────────────────── */
+    .form-field { margin-bottom: 16px; }
+
+    .form-field label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .form-field label .req { color: #F08B96; }
+
+    .form-field input,
+    .form-field textarea,
+    .form-field select {
+      width: 100%;
+      padding: 10px 13px;
+      border: 1.5px solid #dde;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.9rem;
+      color: #333;
+      outline: none;
+      transition: border-color 0.2s;
+      background: #fff;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus,
+    .form-field select:focus {
+      border-color: #2AABB3;
+      box-shadow: 0 0 0 3px rgba(42,171,179,0.1);
+    }
+
+    .form-field textarea { resize: vertical; min-height: 80px; }
+
+    /* ── Preview imagen ──────────────────────────────── */
+    #img-preview {
+      display: none;
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+      border: 1px solid #eee;
+    }
+
+    .img-note {
+      font-size: 0.75rem;
+      color: #aaa;
+      margin-top: 4px;
+    }
+
+    /* ── Botones del formulario ──────────────────────── */
+    .modal-form-actions {
+      display: flex;
+      gap: 10px;
+      padding: 16px 24px 24px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .btn-submit {
+      flex: 1;
+      padding: 12px;
+      background: #2AABB3;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover:not(:disabled) { background: #228E95; }
+    .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .btn-cancel {
+      padding: 12px 20px;
+      background: #f4f4f4;
+      color: #666;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-cancel:hover { background: #eaeaea; }
+
+    /* ══════════════════════════════════════════════════
+       Modal de confirmación eliminación
+    ══════════════════════════════════════════════════ */
+    .rcam-modal--delete .rcam-modal__content {
+      max-width: 380px;
+      text-align: center;
+    }
+
+    .delete-icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    .delete-modal__body {
+      padding: 28px 24px 20px;
+    }
+
+    .delete-modal__body p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .delete-modal__body strong {
+      color: #2c3e50;
+    }
+
+    .delete-modal__actions {
+      display: flex;
+      gap: 10px;
+      padding: 0 24px 24px;
+    }
+
+    .btn-delete-confirm {
+      flex: 1;
+      padding: 12px;
+      background: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-delete-confirm:hover:not(:disabled) { background: #c0392b; }
+    .btn-delete-confirm:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    /* ══════════════════════════════════════════════════
+       Toast
+    ══════════════════════════════════════════════════ */
+    .rcam-toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: #2AABB3;
+      color: #fff;
+      padding: 13px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+      transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s;
+      opacity: 0;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+
+    .rcam-toast--visible {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .rcam-toast--error { background: #e74c3c; }
+
+    /* ══════════════════════════════════════════════════
+       Responsive
+    ══════════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .admin-header { padding: 0 14px; }
+      .admin-main   { padding: 18px 12px 40px; }
+      #product-grid { grid-template-columns: 1fr; }
+      .admin-header__title small { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ Header ═════════════════════════════════════════════════════════════ -->
+  <header class="admin-header">
+    <a href="/" class="admin-header__brand">
+      <img src="/Ex-proyecto/logo_rcam.jpg" alt="Rincón Creativo AM" class="admin-header__logo">
+      <div class="admin-header__title">
+        Panel Administrativo
+        <small>Rincón Creativo AM</small>
+      </div>
+    </a>
+    <div class="admin-header__actions">
+      <a href="/" style="color:#fff;font-size:0.82rem;font-weight:600;text-decoration:none;opacity:0.8;margin-right:4px;">
+        Ver sitio
+      </a>
+      <button class="btn-logout" id="btn-logout">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <!-- ══ Contenido principal ════════════════════════════════════════════════ -->
+  <main class="admin-main">
+
+    <!-- Toolbar -->
+    <div class="admin-toolbar">
+      <div class="admin-toolbar__heading">
+        <h2>Catálogo de Productos</h2>
+        <span id="product-count">0</span> productos registrados
+      </div>
+      <button class="btn-new" id="btn-new-product">
+        + Nuevo Producto
+      </button>
+    </div>
+
+    <!-- Grid de productos -->
+    <div id="product-grid">
+      <p class="rcam-admin-loading">Cargando productos...</p>
+    </div>
+
+  </main>
+
+  <!-- ══ Modal: Crear / Editar producto ════════════════════════════════════ -->
+  <div class="rcam-modal" id="form-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="rcam-modal__content">
+
+      <div class="rcam-modal__header">
+        <h3 id="modal-title">Nuevo Producto</h3>
+        <button class="btn-close-modal" id="btn-close-modal" aria-label="Cerrar">✕</button>
+      </div>
+
+      <form id="product-form" novalidate>
+        <div class="rcam-modal__body">
+
+          <!-- Imagen -->
+          <div class="form-field">
+            <label for="field-image">
+              Imagen
+              <span class="req" id="img-required-note"> *</span>
+            </label>
+            <input type="file" id="field-image" name="image"
+                   accept=".jpg,.jpeg,.png,.webp">
+            <img id="img-preview" alt="Vista previa">
+            <p class="img-note">Formatos: JPG, PNG, WebP — Máx. 5 MB</p>
+          </div>
+
+          <!-- Título -->
+          <div class="form-field">
+            <label for="field-title">Título <span class="req">*</span></label>
+            <input type="text" id="field-title" name="title"
+                   placeholder="Ej. Vasos Infantiles Personalizados"
+                   maxlength="120" required>
+          </div>
+
+          <!-- Descripción -->
+          <div class="form-field">
+            <label for="field-description">Descripción <span class="req">*</span></label>
+            <textarea id="field-description" name="description"
+                      placeholder="Descripción breve del producto..."
+                      maxlength="300" required></textarea>
+          </div>
+
+          <!-- Categoría -->
+          <div class="form-field">
+            <label for="field-category">Categoría <span class="req">*</span></label>
+            <select id="field-category" name="category" required>
+              <option value="" disabled selected>Selecciona una categoría</option>
+            </select>
+          </div>
+
+          <!-- Usos / Etiquetas -->
+          <div class="form-field">
+            <label for="field-uses">Usos / Etiquetas</label>
+            <input type="text" id="field-uses" name="uses"
+                   placeholder="Ej. Bodas, XV años, Graduaciones"
+                   maxlength="200">
+          </div>
+
+        </div><!-- /.rcam-modal__body -->
+
+        <div class="modal-form-actions">
+          <button type="button" class="btn-cancel" id="btn-cancel-form"
+                  onclick="document.getElementById('form-modal').classList.remove('rcam-modal--open')">
+            Cancelar
+          </button>
+          <button type="submit" class="btn-submit" id="btn-submit-form">
+            Guardar
+          </button>
+        </div>
+
+      </form>
+
+    </div><!-- /.rcam-modal__content -->
+  </div>
+
+  <!-- ══ Modal: Confirmar eliminación ══════════════════════════════════════ -->
+  <div class="rcam-modal rcam-modal--delete" id="delete-modal" role="dialog" aria-modal="true">
+    <div class="rcam-modal__content">
+      <div class="delete-modal__body">
+        <div class="delete-icon">🗑️</div>
+        <p><strong>¿Eliminar producto?</strong></p>
+        <p>Se eliminará permanentemente <strong id="delete-product-name"></strong>.<br>
+           Esta acción no se puede deshacer.</p>
+      </div>
+      <div class="delete-modal__actions">
+        <button class="btn-cancel" id="btn-cancel-delete">Cancelar</button>
+        <button class="btn-delete-confirm" id="btn-confirm-delete">Sí, eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ Toast de notificaciones ═══════════════════════════════════════════ -->
+  <div class="rcam-toast" id="toast-msg" role="status" aria-live="polite">
+    <span id="toast-text"></span>
+  </div>
+
+  <!-- ══ Scripts ═══════════════════════════════════════════════════════════ -->
+  <script src="/js/auth.js"></script>
+  <script src="/js/admin.js"></script>
+
+</body>
+</html>
