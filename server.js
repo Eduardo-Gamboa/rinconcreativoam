@@ -258,15 +258,25 @@ async function initData() {
     fs.readFileSync(usersFile, 'utf-8').includes('npm run setup');
 
   if (needsInit) {
-    const adminPassword = process.env.ADMIN_PASSWORD;
     const adminEmail    = process.env.ADMIN_EMAIL || 'america@rinconcreativo.com';
+    const adminPassword = process.env.ADMIN_PASSWORD;
     if (!adminPassword) {
       console.error('ERROR: define la variable de entorno ADMIN_PASSWORD para crear el usuario admin.');
       process.exit(1);
     }
-    const hash = await bcrypt.hash(adminPassword, 10);
-    fs.writeFileSync(usersFile, JSON.stringify([{ email: adminEmail, password: hash }], null, 2));
-    console.log(`Usuario admin creado: ${adminEmail}`);
+
+    const users = [];
+    users.push({ email: adminEmail, password: await bcrypt.hash(adminPassword, 10) });
+    console.log(`Usuario creado: ${adminEmail}`);
+
+    const admin2Email    = process.env.ADMIN2_EMAIL;
+    const admin2Password = process.env.ADMIN2_PASSWORD;
+    if (admin2Email && admin2Password) {
+      users.push({ email: admin2Email, password: await bcrypt.hash(admin2Password, 10) });
+      console.log(`Usuario creado: ${admin2Email}`);
+    }
+
+    fs.writeFileSync(usersFile, JSON.stringify(users, null, 2));
   }
 
   // Crear products.json vacío si no existe
